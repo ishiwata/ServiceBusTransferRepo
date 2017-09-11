@@ -8,5 +8,6 @@ module.exports = function(context, mySbMsg) {
         "rowKey": rowKey,
         "message": JSON.stringify(mySbMsg)
     };
+		context.log('hoge');
     context.done();
 };
