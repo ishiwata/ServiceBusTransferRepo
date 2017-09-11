@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "mySbMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "d2cq",
+      "connection": "iothubservicebusq_RootManageSharedAccessKey_SERVICEBUS",
+      "accessRights": "Manage"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "outServiceBus",
+      "connection": "spxtemptest_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
